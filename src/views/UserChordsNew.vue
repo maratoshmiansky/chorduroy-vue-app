@@ -7,11 +7,11 @@
       </ul>
       <div>
         <label>User ID:</label>
-        <input type="integer" v-model="newUserChordParams.user_id" />
+        <input type="text" v-model="newUserChordParams.user_id" />
       </div>
       <div>
         <label>Chord ID:</label>
-        <input type="integer" v-model="newUserChordParams.chord_id" />
+        <input type="text" v-model="newUserChordParams.chord_id" />
       </div>
       <div>
         <label>Catalog:</label>
