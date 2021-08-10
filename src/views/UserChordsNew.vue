@@ -5,10 +5,10 @@
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
-      <div>
+      <!-- <div>
         <label>User ID:</label>
         <input type="text" v-model="newUserChordParams.user_id" />
-      </div>
+      </div> -->
       <div>
         <label>Chord ID:</label>
         <input type="text" v-model="newUserChordParams.chord_id" />
