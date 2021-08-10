@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import ChordsIndex from "../views/ChordsIndex.vue";
 
 Vue.use(VueRouter);
 
@@ -18,6 +19,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  { path: "/chords", name: "chords-index", component: ChordsIndex },
 ];
 
 const router = new VueRouter({
