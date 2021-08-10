@@ -6,6 +6,8 @@
       <router-link to="/about">About</router-link>
       |
       <router-link to="/chords">Chords</router-link>
+      |
+      <router-link to="/user_chords">User Chords</router-link>
     </div>
     <router-view />
   </div>

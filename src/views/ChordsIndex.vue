@@ -1,5 +1,5 @@
 <template>
-  <div class="allchords">
+  <div class="chords-index">
     <div v-for="chord in chords" :key="chord.id">
       <router-link v-bind:to="`/chords/${chord.id}`">
         <h2>Name: {{ chord.name }}</h2>
