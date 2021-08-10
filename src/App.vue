@@ -8,6 +8,8 @@
       <router-link to="/chords">Chords</router-link>
       |
       <router-link to="/user_chords">User Chords</router-link>
+      |
+      <router-link to="/user_chords/new">Create User Chord</router-link>
     </div>
     <router-view />
   </div>
