@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import ChordsIndex from "../views/ChordsIndex.vue";
+import ChordsShow from "../views/ChordsShow.vue";
 
 Vue.use(VueRouter);
 
@@ -20,6 +21,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   { path: "/chords", name: "chords-index", component: ChordsIndex },
+  { path: "/chords/:id", name: "chords-show", component: ChordsShow },
 ];
 
 const router = new VueRouter({
