@@ -1,6 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Signup from "../views/Signup.vue";
+import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
 import ChordsIndex from "../views/ChordsIndex.vue";
 import ChordsShow from "../views/ChordsShow.vue";
 import UserChordsIndex from "../views/UserChordsIndex.vue";
@@ -23,6 +26,9 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  { path: "/signup", name: "signup", component: Signup },
+  { path: "/login", name: "login", component: Login },
+  { path: "/logout", name: "logout", component: Logout },
   { path: "/chords", name: "chords-index", component: ChordsIndex },
   { path: "/chords/:id", name: "chords-show", component: ChordsShow },
   { path: "/user_chords", name: "userchords-index", component: UserChordsIndex },
