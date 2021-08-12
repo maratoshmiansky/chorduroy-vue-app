@@ -3,11 +3,11 @@
     <h1>{{ message }}</h1>
     <div v-for="chord in chords" v-bind:key="chord.id">
       <h2>Name: {{ chord.name }}</h2>
-      <p>Image: {{ chord.image }}</p>
-      <p>Root: {{ chord.chord_root }}</p>
+      <img v-bind:src="chord.image" alt="chord.name" />
+      <!-- <p>Root: {{ chord.chord_root }}</p>
       <p>Alteration: {{ chord.alteration }}</p>
       <p>Quality: {{ chord.quality }}</p>
-      <p>Option: {{ chord.option }}</p>
+      <p>Option: {{ chord.option }}</p> -->
     </div>
   </div>
 </template>

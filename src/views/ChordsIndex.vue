@@ -3,11 +3,11 @@
     <div v-for="chord in chords" :key="chord.id">
       <router-link v-bind:to="`/chords/${chord.id}`">
         <h2>Name: {{ chord.name }}</h2>
-        <p>Image: {{ chord.image }}</p>
-        <p>Root: {{ chord.chord_root }}</p>
+        <img v-bind:src="chord.image" alt="chord.name" />
+        <!-- <p>Root: {{ chord.chord_root }}</p>
         <p>Alteration: {{ chord.alteration }}</p>
         <p>Quality: {{ chord.quality }}</p>
-        <p>Option: {{ chord.option }}</p>
+        <p>Option: {{ chord.option }}</p> -->
       </router-link>
       <!-- <button>More info!</button> -->
     </div>

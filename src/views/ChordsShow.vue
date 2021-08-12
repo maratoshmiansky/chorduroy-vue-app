@@ -2,7 +2,7 @@
   <div class="chords-show">
     <div class="container">
       <h2>Name: {{ chord.name }}</h2>
-      <p>Image: {{ chord.image }}</p>
+      <img v-bind:src="chord.image" alt="chord.name" />
       <p>Root: {{ chord.chord_root }}</p>
       <p>Alteration: {{ chord.alteration }}</p>
       <p>Quality: {{ chord.quality }}</p>
