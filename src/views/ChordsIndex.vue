@@ -2,7 +2,7 @@
   <div class="chords-index">
     <div v-for="chord in chords" :key="chord.id">
       <router-link v-bind:to="`/chords/${chord.id}`">
-        <h2>Name: {{ chord.name }}</h2>
+        <h2>Chord: {{ chord.name }}</h2>
         <img v-bind:src="chord.image" alt="chord.name" />
         <!-- <p>Root: {{ chord.chord_root }}</p>
         <p>Alteration: {{ chord.alteration }}</p>

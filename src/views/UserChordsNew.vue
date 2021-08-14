@@ -9,6 +9,9 @@
         <label>User ID:</label>
         <input type="text" v-model="newUserChordParams.user_id" />
       </div> -->
+      <div v-for="chord in chords" :key="chord.id">
+        <a>{{ chord.name }} = chord ID: {{ chord.id }}</a>
+      </div>
       <div>
         <label>Chord ID:</label>
         <input type="text" v-model="newUserChordParams.chord_id" />
@@ -28,10 +31,20 @@ export default {
   data: function () {
     return {
       errors: [],
+      chords: [],
       newUserChordParams: {},
     };
   },
+  created: function () {
+    this.indexChords();
+  },
   methods: {
+    indexChords: function () {
+      axios.get("/chords").then((response) => {
+        this.chords = response.data;
+        console.log("All chords:", this.chords);
+      });
+    },
     createUserChord: function () {
       console.log("Creating that user chord!");
       axios.post("/user_chords", this.newUserChordParams).then((response) => {

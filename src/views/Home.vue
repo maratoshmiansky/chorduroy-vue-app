@@ -2,7 +2,7 @@
   <div class="home">
     <h1>{{ message }}</h1>
     <div v-for="chord in chords" v-bind:key="chord.id">
-      <h2>Name: {{ chord.name }}</h2>
+      <h2>Chord: {{ chord.name }}</h2>
       <img v-bind:src="chord.image" alt="chord.name" />
       <!-- <p>Root: {{ chord.chord_root }}</p>
       <p>Alteration: {{ chord.alteration }}</p>
