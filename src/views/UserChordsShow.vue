@@ -11,6 +11,8 @@
       <p>Quality: {{ user_chord.chord.quality }}</p>
       <p>Option: {{ user_chord.chord.option }}</p>
       <!-- <router-link v-bind:to="`/user_chords/${user_chord.id}/edit`"><button>Edit User Chord</button></router-link> -->
+      <button v-on:click="destroyUserChord()">Delete User Chord</button>
+      <br />
       <router-link to="/user_chords">Back to all user chords</router-link>
     </div>
   </div>
@@ -29,6 +31,14 @@ export default {
     axios.get("/user_chords/" + this.$route.params.id).then((response) => {
       this.user_chord = response.data;
     });
+  },
+  methods: {
+    destroyUserChord: function () {
+      axios.delete(`/user_chords/${this.$route.params.id}`).then((response) => {
+        console.log("User chord deleted!", response.data);
+        this.$router.push("/user_chords");
+      });
+    },
   },
 };
 </script>
