@@ -13,6 +13,12 @@
         <a>{{ chord.name }} = chord ID: {{ chord.id }}</a>
       </div>
       <div>
+        <label>Chord name:</label>
+        <input type="text" v-model="chordName" />
+        <p>Chord selected: {{ chordName }}</p>
+        <p>Chord ID: {{ chordName }}</p>
+      </div>
+      <div>
         <label>Chord ID:</label>
         <input type="text" v-model="newUserChordParams.chord_id" />
       </div>
@@ -32,6 +38,7 @@ export default {
     return {
       errors: [],
       chords: [],
+      chordName: "",
       newUserChordParams: {},
     };
   },

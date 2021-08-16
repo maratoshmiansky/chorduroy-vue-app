@@ -1,6 +1,7 @@
 <template>
   <div class="userchords-index">
-    <div v-for="user_chord in user_chords" :key="user_chord.id">
+    <!-- <div v-for="user_chord in user_chords" :key="user_chord.id"> -->
+    <div v-for="user_chord in orderBy(user_chords, 'catalog', 'chord.name')" :key="user_chord.id">
       <router-link v-bind:to="`/user_chords/${user_chord.id}`">
         <!-- <p>User ID: {{ user_chord.user_id }}</p>
         <p>Chord ID: {{ user_chord.chord_id }}</p> -->
@@ -15,10 +16,11 @@
 
 <script>
 import axios from "axios";
+import Vue2Filters from "vue2-filters";
 export default {
+  mixins: [Vue2Filters.mixin],
   data: function () {
     return {
-      message: "Here are chords!",
       user_chords: [],
     };
   },
