@@ -3,25 +3,27 @@
     <div class="container">
       <h2>Chord name: {{ chord.name }}</h2>
       <img v-bind:src="chord.image" alt="chord.name" />
-      <p>Root: {{ chord.chord_root }}</p>
+      <!-- <p>Root: {{ chord.chord_root }}</p>
       <p>Alteration: {{ chord.alteration }}</p>
       <p>Quality: {{ chord.quality }}</p>
-      <p>Option: {{ chord.option }}</p>
+      <p>Option: {{ chord.option }}</p> -->
       <!-- <router-link v-bind:to="`/chords/${chord.id}/edit`"><button>Edit Chord</button></router-link> -->
       <form v-on:submit.prevent="createUserChord(chord)">
         <h1>Add User Chord to Catalog</h1>
         <ul>
           <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
         </ul>
-        <div>
+        <!-- <div>
           <p>Chord ID: {{ chord.id }}</p>
-        </div>
+        </div> -->
         <div>
           <label>Catalog:</label>
           <input type="text" v-model="newUserChordParams.catalog" />
         </div>
+        <br />
         <input type="submit" value="Submit" />
       </form>
+      <br />
       <router-link to="/chords">Back to all chords</router-link>
     </div>
   </div>

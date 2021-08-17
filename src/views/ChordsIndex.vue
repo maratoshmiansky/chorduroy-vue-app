@@ -1,5 +1,7 @@
 <template>
   <div class="chords-index">
+    <h1>{{ title }}</h1>
+    <h2>{{ heading }}</h2>
     <div v-for="chord in chords" :key="chord.id">
       <router-link v-bind:to="`/chords/${chord.id}`">
         <h2>Chord: {{ chord.name }}</h2>
@@ -19,6 +21,8 @@ import axios from "axios";
 export default {
   data: function () {
     return {
+      title: "Chord Library",
+      heading: "Click on a chord to select it",
       chords: [],
     };
   },

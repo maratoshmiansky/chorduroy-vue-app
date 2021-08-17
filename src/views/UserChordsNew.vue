@@ -1,7 +1,7 @@
 <template>
   <div class="userchords-new">
     <form v-on:submit.prevent="createUserChord()">
-      <h1>New User Chord</h1>
+      <h1>Chords and their IDs</h1>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
@@ -12,20 +12,17 @@
       <div v-for="chord in chords" :key="chord.id">
         <a>{{ chord.name }} = chord ID: {{ chord.id }}</a>
       </div>
-      <div>
-        <label>Chord name:</label>
-        <input type="text" v-model="chordName" />
-        <p>Chord selected: {{ chordName }}</p>
-        <p>Chord ID: {{ chordName }}</p>
-      </div>
+      <h1>Create a new user chord</h1>
       <div>
         <label>Chord ID:</label>
         <input type="text" v-model="newUserChordParams.chord_id" />
       </div>
+      <br />
       <div>
         <label>Catalog:</label>
         <input type="text" v-model="newUserChordParams.catalog" />
       </div>
+      <br />
       <input type="submit" value="Submit" />
     </form>
   </div>
@@ -33,14 +30,14 @@
 
 <script>
 import axios from "axios";
-import Vue2Filters from "vue2-filters";
+// import Vue2Filters from "vue2-filters";
 export default {
-  mixins: [Vue2Filters.mixin],
+  // mixins: [Vue2Filters.mixin],
   data: function () {
     return {
       errors: [],
       chords: [],
-      chordName: "",
+      // chordName: "",
       newUserChordParams: {},
     };
   },
