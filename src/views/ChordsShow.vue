@@ -8,6 +8,20 @@
       <p>Quality: {{ chord.quality }}</p>
       <p>Option: {{ chord.option }}</p>
       <!-- <router-link v-bind:to="`/chords/${chord.id}/edit`"><button>Edit Chord</button></router-link> -->
+      <form v-on:submit.prevent="createUserChord(chord)">
+        <h1>Add User Chord to Catalog</h1>
+        <ul>
+          <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+        </ul>
+        <div>
+          <p>Chord ID: {{ chord.id }}</p>
+        </div>
+        <div>
+          <label>Catalog:</label>
+          <input type="text" v-model="newUserChordParams.catalog" />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
       <router-link to="/chords">Back to all chords</router-link>
     </div>
   </div>
@@ -20,12 +34,23 @@ export default {
     return {
       errors: [],
       chord: {},
+      newUserChordParams: {},
     };
   },
   created: function () {
     axios.get("/chords/" + this.$route.params.id).then((response) => {
       this.chord = response.data;
     });
+  },
+  methods: {
+    createUserChord: function (chord) {
+      console.log("Creating that user chord!");
+      this.newUserChordParams.chord_id = chord.id;
+      axios.post("/user_chords", this.newUserChordParams).then((response) => {
+        this.$router.push("/user_chords");
+        console.log(response.data);
+      });
+    },
   },
 };
 </script>
