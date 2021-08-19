@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <br />
+    <br />
+    <br />
+    <br />
     <h1>{{ message }}</h1>
     <h2>{{ heading }}</h2>
     <!-- <div v-for="chord in chords" v-bind:key="chord.id">

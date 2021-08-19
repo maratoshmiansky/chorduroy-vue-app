@@ -31,8 +31,6 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      title: "Chord Library",
-      heading: "Click on a chord to select it",
       chords: [],
     };
   },
