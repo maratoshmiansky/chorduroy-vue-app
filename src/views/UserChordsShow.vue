@@ -1,22 +1,27 @@
 <template>
   <div class="userchords-show">
-    <div class="container">
-      <!-- <p>User ID: {{ user_chord.user_id }}</p>
-      <p>Chord ID: {{ user_chord.chord_id }}</p> -->
-      <h2>Catalog: {{ user_chord.catalog }}</h2>
-      <h2>Chord name: {{ user_chord.chord.name }}</h2>
-      <img v-bind:src="user_chord.chord.image" alt="user_chord.chord.name" />
-      <!-- <p>Root: {{ user_chord.chord.chord_root }}</p>
-      <p>Alteration: {{ user_chord.chord.alteration }}</p>
-      <p>Quality: {{ user_chord.chord.quality }}</p>
-      <p>Option: {{ user_chord.chord.option }}</p> -->
-      <!-- <router-link v-bind:to="`/user_chords/${user_chord.id}/edit`"><button>Edit User Chord</button></router-link> -->
-      <br />
-      <button v-on:click="destroyUserChord()">Delete User Chord</button>
-      <br />
-      <br />
-      <router-link to="/user_chords">Back to all user chords</router-link>
-    </div>
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <br />
+            <img v-bind:src="user_chord.chord.image" alt="user_chord.chord.name" />
+            <br />
+            <br />
+            <h2>Chord: {{ user_chord.chord.name }}</h2>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <br />
+            <h3>Catalog: {{ user_chord.catalog }}</h3>
+            <br />
+            <button v-on:click="destroyUserChord()">Delete User Chord</button>
+            <br />
+            <br />
+            <router-link to="/user_chords">Back to all User Chords</router-link>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

@@ -6,11 +6,12 @@
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
             <br />
             <img v-bind:src="chord.image" class="img-fluid" alt="chord.name" />
+            <br />
+            <br />
+            <h4>Chord: {{ chord.name }}</h4>
+            <br />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <br />
-            <br />
-            <h3>Chord name: {{ chord.name }}</h3>
             <br />
             <form v-on:submit.prevent="createUserChord(chord)">
               <h2>Add User Chord to Catalog</h2>
@@ -30,7 +31,7 @@
               <input type="submit" value="Submit" />
             </form>
             <br />
-            <router-link to="/chords">Back to all chords</router-link>
+            <router-link to="/chords">Back to Chord Library</router-link>
           </div>
         </div>
       </div>
