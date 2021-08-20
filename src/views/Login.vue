@@ -1,20 +1,41 @@
 <template>
   <div class="login">
-    <form v-on:submit.prevent="submit()">
-      <h1>Login</h1>
-      <ul>
-        <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
-      </ul>
-      <div>
-        <label>Email:</label>
-        <input type="email" v-model="newSessionParams.email" />
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <!-- <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100"></div> -->
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <br />
+            <form v-on:submit.prevent="submit()">
+              <h3>Login</h3>
+              <ul>
+                <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+              </ul>
+              <div class="col-md-6 form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                  v-model="newSessionParams.email"
+                />
+              </div>
+              <div class="col-md-6 form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  required
+                  v-model="newSessionParams.password"
+                />
+              </div>
+              <br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
       </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" v-model="newSessionParams.password" />
-      </div>
-      <input type="submit" value="Submit" />
-    </form>
+    </section>
   </div>
 </template>
 
