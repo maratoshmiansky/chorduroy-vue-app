@@ -4,7 +4,7 @@
     <header id="header" class="fixed-top header-scrolled">
       <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0">
-          <a href="index.html">
+          <a href="/">
             Chorduroy
             <span>.</span>
           </a>
@@ -23,26 +23,11 @@
               <li v-if="isLoggedIn()"><a class="nav-link scrollto" href="/chords">Chords</a></li>
               <li v-if="isLoggedIn()"><a class="nav-link scrollto" href="/user_chords">User Chords</a></li>
               <!-- <li v-if="isLoggedIn()"><a class="nav-link scrollto" href="/user_chords/new">Create User Chord</a></li> -->
-              <!-- <li class="dropdown"> -->
-              <!-- <a href="#">
-                  <span>Something else</span>
-                  <i class="bi bi-chevron-down"></i>
-                </a> -->
-              <!-- <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li><a href="#">Drop Down 2</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
-                </ul> -->
-              <!-- </li> -->
-              <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav>
         </div>
         <!-- .navbar -->
-
-        <!-- <a href="#about" class="get-started-btn scrollto">Get Started</a> -->
       </div>
     </header>
     <!-- End Header -->
