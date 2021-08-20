@@ -3,7 +3,9 @@
     <section id="team" class="team">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div class="section-title">
+          <br />
           <h2>Chord Library</h2>
+          <br />
           <h4>Click on a chord to select it</h4>
         </div>
 
