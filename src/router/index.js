@@ -7,7 +7,7 @@ import Logout from "../views/Logout.vue";
 import ChordsIndex from "../views/ChordsIndex.vue";
 import ChordsShow from "../views/ChordsShow.vue";
 import UserChordsIndex from "../views/UserChordsIndex.vue";
-import UserChordsNew from "../views/UserChordsNew.vue";
+// import UserChordsNew from "../views/UserChordsNew.vue";
 import UserChordsShow from "../views/UserChordsShow.vue";
 
 Vue.use(VueRouter);
@@ -32,7 +32,7 @@ const routes = [
   { path: "/chords", name: "chords-index", component: ChordsIndex },
   { path: "/chords/:id", name: "chords-show", component: ChordsShow },
   { path: "/user_chords", name: "userchords-index", component: UserChordsIndex },
-  { path: "/user_chords/new", name: "userchords-new", component: UserChordsNew },
+  // { path: "/user_chords/new", name: "userchords-new", component: UserChordsNew },
   { path: "/user_chords/:id", name: "userchords-show", component: UserChordsShow },
 ];
 
