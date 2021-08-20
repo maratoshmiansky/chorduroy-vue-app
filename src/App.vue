@@ -20,9 +20,9 @@
               <li v-if="!isLoggedIn()"><a class="nav-link scrollto" href="/signup">Signup</a></li>
               <li v-if="!isLoggedIn()"><a class="nav-link scrollto" href="/login">Login</a></li>
               <li v-if="isLoggedIn()"><a class="nav-link scrollto" href="/logout">Logout</a></li>
-              <li><a class="nav-link scrollto" href="/chords">Chords</a></li>
-              <li><a class="nav-link scrollto" href="/user_chords">User Chords</a></li>
-              <li><a class="nav-link scrollto" href="/user_chords/new">Create User Chord</a></li>
+              <li v-if="isLoggedIn()"><a class="nav-link scrollto" href="/chords">Chords</a></li>
+              <li v-if="isLoggedIn()"><a class="nav-link scrollto" href="/user_chords">User Chords</a></li>
+              <li v-if="isLoggedIn()"><a class="nav-link scrollto" href="/user_chords/new">Create User Chord</a></li>
               <!-- <li class="dropdown"> -->
               <!-- <a href="#">
                   <span>Something else</span>
