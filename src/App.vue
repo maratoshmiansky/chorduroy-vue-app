@@ -15,7 +15,7 @@
         <div>
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-              <li><a class="nav-link scrollto active" href="/">Home</a></li>
+              <li><a class="nav-link scrollto" href="/">Home</a></li>
               <li><a class="nav-link scrollto" href="/about">About</a></li>
               <li v-if="!isLoggedIn()"><a class="nav-link scrollto" href="/signup">Signup</a></li>
               <li v-if="!isLoggedIn()"><a class="nav-link scrollto" href="/login">Login</a></li>
@@ -24,7 +24,7 @@
               <li v-if="isLoggedIn()"><a class="nav-link scrollto" href="/user_chords">User Chords</a></li>
               <!-- <li v-if="isLoggedIn()"><a class="nav-link scrollto" href="/user_chords/new">Create User Chord</a></li> -->
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
+            <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
           </nav>
         </div>
         <!-- .navbar -->

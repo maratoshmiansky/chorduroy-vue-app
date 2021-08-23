@@ -12,6 +12,11 @@
             <h3>Welcome to Chorduroy - A Guitar Chord Finder App</h3>
             <p class="fst-italic">Click on Chords in the menu to go to Chord Library</p>
             <p class="fst-italic">Click on User Chords in the menu to go to your User Chords</p>
+            <img
+              src="https://www.musicgrotto.com/wp-content/uploads/2021/02/many-guitar-chord-charts-on-one-image.png"
+              class="img-fluid"
+              alt=""
+            />
             <!-- <p>(More text can go here...)</p> -->
           </div>
         </div>

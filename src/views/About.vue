@@ -16,6 +16,11 @@
             <h3>Chorduroy - A Guitar Chord Finder App</h3>
             <p class="fst-italic">Developed by Marat Oshmiansky in Ruby on Rails and Vue.js</p>
             <!-- <p>(More text can go here...)</p> -->
+            <img
+              src="https://deviantnoise.com/wp-content/uploads/2020/06/how-to-play-barre-chords.jpg"
+              class="img-fluid"
+              alt=""
+            />
           </div>
         </div>
       </div>
