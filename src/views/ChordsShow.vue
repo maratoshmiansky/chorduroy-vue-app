@@ -8,7 +8,7 @@
             <img v-bind:src="chord.image" class="img-fluid" alt="chord.name" />
             <br />
             <br />
-            <h4>Chord: {{ chord.name }}</h4>
+            <h3>Chord: {{ chord.name }}</h3>
             <br />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">

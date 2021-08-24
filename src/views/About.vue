@@ -6,7 +6,7 @@
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
             <br />
             <img
-              src="https://www.libertyparkmusic.com/wp-content/uploads/Depositphotos_3729281_m-2015.jpg"
+              src="https://i.pinimg.com/564x/01/c9/1d/01c91dd235998fff456a055fdf84e43c.jpg"
               class="img-fluid"
               alt=""
             />
@@ -21,6 +21,14 @@
               class="img-fluid"
               alt=""
             />
+            <br />
+            <br />
+            <img
+              src="https://www.learntoplaymusic.com/blog/wp-content/uploads/2014/08/C-major-chord-diagram.jpg"
+              class="img-fluid"
+              alt=""
+            />
+            <!-- <img src="http://www.traditionalmusic.co.uk/chords/guitar-g.jpg" class="img-fluid" alt="" /> -->
           </div>
         </div>
       </div>
