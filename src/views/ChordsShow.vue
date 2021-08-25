@@ -14,7 +14,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <br />
             <form v-on:submit.prevent="createUserChord(chord)">
-              <h2>Add User Chord to Catalog</h2>
+              <h2>Add Chord to Catalog</h2>
               <ul>
                 <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
               </ul>
@@ -28,16 +28,43 @@
                 />
               </div>
               <br />
-              <input type="submit" value="Submit" />
+              <input class="input" type="submit" value="Submit" />
             </form>
             <br />
-            <router-link to="/chords">Back to Chord Library</router-link>
+            <router-link class="link" to="/chords">Back to Chord Library</router-link>
           </div>
         </div>
       </div>
     </section>
   </div>
 </template>
+
+<style>
+.input {
+  border: 2px solid;
+  border-radius: 8px;
+  color: rgb(119, 0, 255);
+  background-color: rgb(255, 226, 97);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.input:hover {
+  background-color: rgb(252, 245, 151);
+}
+
+.link {
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 1px 1px rgb(119, 0, 255);
+}
+</style>
 
 <script>
 import axios from "axios";

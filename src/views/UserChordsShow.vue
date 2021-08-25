@@ -14,16 +14,44 @@
             <br />
             <h3>Catalog: {{ user_chord.catalog }}</h3>
             <br />
-            <button v-on:click="destroyUserChord()">Delete User Chord</button>
+            <button class="button" v-on:click="destroyUserChord()">Delete User Chord</button>
             <br />
             <br />
-            <router-link to="/user_chords">Back to all User Chords</router-link>
+            <router-link class="link" to="/user_chords">Back to all User Chords</router-link>
           </div>
         </div>
       </div>
     </section>
   </div>
 </template>
+
+<style>
+.button {
+  border: 2px solid;
+  border-radius: 8px;
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 226, 97);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(252, 245, 151);
+}
+
+.link {
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 1px 1px rgb(119, 0, 255);
+}
+</style>
 
 <script>
 import axios from "axios";
