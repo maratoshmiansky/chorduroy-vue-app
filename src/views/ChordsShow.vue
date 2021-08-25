@@ -42,7 +42,7 @@
 <style>
 .input {
   border: 2px solid;
-  border-radius: 8px;
+  border-radius: 16px;
   color: rgb(119, 0, 255);
   background-color: rgb(255, 226, 97);
   padding: 8px 16px;
@@ -62,7 +62,7 @@
 .link {
   font-weight: bold;
   font-style: italic;
-  text-shadow: 1px 1px rgb(119, 0, 255);
+  text-shadow: 1px 1px rgb(0, 0, 0);
 }
 </style>
 
